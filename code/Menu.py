@@ -9,7 +9,7 @@ from code.Const import WIN_WIDTH, COLOR_BLUE, MENU_OPTION, COLOR_WHITE, COLOR_YE
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./asset/menu/menuBg.png')
+        self.surf = pygame.image.load('./asset/menu/menuBg.png').convert_alpha()
         self.surf = pygame.transform.scale(self.surf, self.window.get_size())
         self.rect = self.surf.get_rect(left=0, top=0)
 
