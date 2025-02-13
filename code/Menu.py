@@ -3,7 +3,7 @@ import pygame
 from pygame import  Surface, Rect
 from pygame.font import Font
 
-from code.Const import WIN_WIDTH, COLOR_BLUE, MENU_OPTION, COLOR_WHITE, COLOR_YELLOW
+from code.Const import WIN_WIDTH, MENU_OPTION, COLOR_WHITE, COLOR_YELLOW, COLOR_ORANGE
 
 
 class Menu:
@@ -19,14 +19,14 @@ class Menu:
         pygame.mixer_music.play(-1)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(70, "Forest Flight", COLOR_BLUE, ((WIN_WIDTH / 2), 70))
-            self.menu_text(50, "escape", COLOR_BLUE, ((WIN_WIDTH / 2), 120))
+            self.menu_text(70, "Halloween", COLOR_ORANGE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(50, "escape", COLOR_ORANGE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(30, MENU_OPTION[i], COLOR_YELLOW, ((WIN_WIDTH / 2), 390 + 25 * i))
+                    self.menu_text(30, MENU_OPTION[i], COLOR_YELLOW, ((WIN_WIDTH / 2), 220 + 25 * i))
                 else:
-                   self.menu_text(30, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 390 + 25 * i))
+                   self.menu_text(30, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 220 + 25 * i))
             pygame.display.flip()
 
             for event in pygame.event.get():

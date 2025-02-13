@@ -1,6 +1,6 @@
 import pygame
 
-COLOR_BLUE = (0,0,255)
+COLOR_ORANGE = (255,165,0)
 COLOR_WHITE = (255, 255, 255)
 COLOR_YELLOW = (255, 255, 125)
 
@@ -11,10 +11,16 @@ ENTITY_SPEED = {
     'Level1Bg0': 1,
     'Level1Bg1': 2,
     'Level1Bg2': 3,
+    'Level1Bg3': 4,
+    'Level1Bg4': 5,
+    'Level1Bg5': 6,
     'Player1': 3,
+    'Player1Shot': 1,
     'Player2': 3,
-    'Enimy1': 2,
-    'Enimy2': 1,
+    'Player2Shot': 3,
+    'Enemy1': 1,
+    'Enemy2': 3,
+    'Enemy3': 2,
 }
 
 ENTITY_HEALTH = {
@@ -27,8 +33,12 @@ ENTITY_HEALTH = {
     'Level1Bg6': 999,
     'Player1': 300,
     'Player2': 300,
-    'Enimy1': 50,
-    'Enimy2': 60,
+    'Enemy1': 50,
+    'Enemy1Shot': 1,
+    'Enemy2': 90,
+    'Enemy2Shot': 4,
+    'Enemy3': 70,
+    'Enemy3Shot': 2,
 }
 
 
